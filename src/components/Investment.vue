@@ -119,7 +119,8 @@
                             'Content-Type': 'application/json',
                         },
                         body: JSON.stringify(sendData),
-                    })
+                    }).then(() => console.log("Запрос отправлен"))
+                        .catch(() => console.log("Возникла ошибка при отправке"));
                 }
             },
         },
@@ -148,6 +149,7 @@
         width: 128px;
         height: 44px;
         display: flex;
+        user-select: none;
     }
 
     .button-in-down {

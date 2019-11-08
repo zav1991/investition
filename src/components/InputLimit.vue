@@ -180,6 +180,7 @@
         font-family: "Arial";
         color: rgb(144, 146, 148);
         line-height: 22px;
+        z-index: 2;
     }
 
     .limit-input {
